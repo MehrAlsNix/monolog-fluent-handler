@@ -6,7 +6,7 @@
         "fluent/logger": "^0.3"
     },
     "require-dev": {
-        "phpunit/phpunit": ">=4.3",
+        "phpunit/phpunit": "~4.3",
         "satooshi/php-coveralls": "^0.6.1"
     },
     "autoload": {
@@ -21,5 +21,8 @@
             "name": "SATO Keisuke",
             "email": "ksato@otobank.co.jp"
         }
-    ]
+    ],
+    "scripts": {
+        "run-tests": "./vendor/bin/phpunit --coverage-text tests"
+    }
 }
