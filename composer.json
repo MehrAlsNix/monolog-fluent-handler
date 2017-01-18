@@ -1,5 +1,5 @@
 {
-    "name": "otobank/monolog-fluent-handler",
+    "name": "mehr-als-nix/monolog-fluent-handler",
     "require": {
         "php": ">=5.4",
         "monolog/monolog": "1.*",
@@ -11,8 +11,8 @@
     },
     "autoload": {
         "psr-4": {
-            "Otobank\\Monolog\\Handler\\": "src/",
-            "Otobank\\Monolog\\Handler\\Tests\\": "tests/"
+            "MehrAlsNix\\Monolog\\Handler\\": "src/",
+            "MehrAlsNix\\Monolog\\Handler\\Tests\\": "tests/"
         }
     },
     "license": "MIT",
@@ -23,6 +23,6 @@
         }
     ],
     "scripts": {
-        "run-tests": "./vendor/bin/phpunit --coverage-text tests"
+        "run-tests": "./vendor/bin/phpunit tests"
     }
 }

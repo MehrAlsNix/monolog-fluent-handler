@@ -1,10 +1,10 @@
 <?php
 
-namespace Otobank\Monolog\Handler\Tests;
+namespace MehrAlsNix\Monolog\Handler\Tests;
 
 use Fluent\Logger\FluentLogger;
 use Monolog\Logger;
-use Otobank\Monolog\Handler\FluentHandler;
+use MehrAlsNix\Monolog\Handler\FluentHandler;
 use ReflectionClass;
 
 class FluentHandlerTest extends \PHPUnit_Framework_TestCase

@@ -1,6 +1,6 @@
 <?php
 
-namespace Otobank\Monolog\Handler;
+namespace MehrAlsNix\Monolog\Handler;
 
 use Fluent\Logger\FluentLogger;
 use Fluent\Logger\HttpLogger;
