@@ -1,6 +1,8 @@
 Monolog Fluent Handler
 ======================
 
+[![Build Status](https://travis-ci.org/MehrAlsNix/monolog-fluent-handler.svg?branch=master)](https://travis-ci.org/MehrAlsNix/monolog-fluent-handler)
+
 Monolog handler for Fluent.
 Also supporting data from optional field "extra", e.g. set by IntrospectionProcessor.
 
@@ -48,12 +50,13 @@ composer require mehr-als-nix/monolog-fluent-handler
 ```
 
 
-Author
+Authors
 ------
-
-SATO Keisuke - ksato@otobank.co.jp - https://github.com/riaf
+Mattias Meiner - mattiasmeiner@gmail.com - https://github.com/MattiasAlsNix
+started by ATO Keisuke - ksato@otobank.co.jp - https://github.com/riaf
 
 
 License
 -------
 
+[LICENSE:MIT]
