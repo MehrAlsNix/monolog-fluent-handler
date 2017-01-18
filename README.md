@@ -53,6 +53,7 @@ composer require mehr-als-nix/monolog-fluent-handler
 Authors
 ------
 Mattias Meiner - mattiasmeiner@gmail.com - https://github.com/MattiasAlsNix
+
 started by ATO Keisuke - ksato@otobank.co.jp - https://github.com/riaf
 
 
