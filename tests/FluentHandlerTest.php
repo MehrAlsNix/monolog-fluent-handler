@@ -65,21 +65,21 @@ class FluentHandlerTest extends \PHPUnit_Framework_TestCase
     {
         return [
             [
-                [
+                'record' => [
                     'channel' => 'unittest',
                     'message' => 'This is it.',
                     'context' => [],
                     'formatted' => 'This is formatted.',
                     'level' => Logger::DEBUG,
                 ],
-                'unittest',
-                [
+                'tag' => 'unittest',
+                'data' => [
                     'message' => 'This is it.',
                     'level' => Logger::getLevelName(Logger::DEBUG),
                 ]
             ],
             [
-                [
+                'record' => [
                     'channel' => 'unittest',
                     'message' => 'This is it.',
                     'context' => [
@@ -88,13 +88,14 @@ class FluentHandlerTest extends \PHPUnit_Framework_TestCase
                     'formatted' => 'This is formatted.',
                     'level' => Logger::DEBUG,
                 ],
-                'unittest',
-                [
+                'tag' => 'unittest',
+                'data' => [
                     'Here' => 'Comes the sun.',
                     'message' => 'This is it.',
                     'level' => Logger::getLevelName(Logger::DEBUG),
                 ]
             ],
+            
         ];
     }
 
