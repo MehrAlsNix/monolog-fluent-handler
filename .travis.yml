@@ -7,3 +7,4 @@ php:
   - nightly
   - hhvm
 install: composer install
+script: composer run-tests
