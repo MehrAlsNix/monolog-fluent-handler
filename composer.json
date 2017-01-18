@@ -18,6 +18,10 @@
     "license": "MIT",
     "authors": [
         {
+            "name": "Mattias Meiner",
+            "email": "mattiasmeiner@gmail.com"
+        },
+        {
             "name": "SATO Keisuke",
             "email": "ksato@otobank.co.jp"
         }
