@@ -47,11 +47,14 @@ class FluentHandler extends AbstractProcessingHandler
     public function write(array $record)
     {
         $tag = $record['channel'];
-
-        $this->logger->post($tag, array_merge($record['context'], [
+        $data = array_merge($record['context'], [
             'level' => Logger::getLevelName($record['level']),
             'message' => $record['message'],
-        ]));
+        ]);
+        if (array_key_exists('extra', $record)) {
+            $data = array_merge($record['extra'], $data);
+        }
+        $this->logger->post($tag, $data);
     }
 
     /**
