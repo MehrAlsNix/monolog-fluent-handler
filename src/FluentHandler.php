@@ -3,6 +3,7 @@
 namespace MehrAlsNix\Monolog\Handler;
 
 use Fluent\Logger\FluentLogger;
+use Fluent\Logger\HttpLogger;
 use Fluent\Logger\LoggerInterface;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger;
@@ -72,6 +73,12 @@ class FluentHandler extends AbstractProcessingHandler
         }
 
         switch (strtolower($parameters['scheme'])) {
+            case 'http':
+                $host = isset($parameters['host']) ? $parameters['host'] : '127.0.0.1';
+                $port = isset($parameters['port']) ? $parameters['port'] : HttpLogger::DEFAULT_HTTP_PORT;
+                $this->logger = new HttpLogger($host, $port);
+                break;
+
             case 'tcp':
             case 'fluent':
                 $host = isset($parameters['host']) ? $parameters['host'] : FluentLogger::DEFAULT_ADDRESS;
