@@ -95,7 +95,26 @@ class FluentHandlerTest extends \PHPUnit_Framework_TestCase
                     'level' => Logger::getLevelName(Logger::DEBUG),
                 ]
             ],
-            
+            [
+                'record' => [
+                    'channel' => 'unittest',
+                    'message' => 'This is it.',
+                    'context' => [],
+                    'formatted' => 'This is formatted.',
+                    'level' => Logger::DEBUG,
+                    'extra' => [
+                        'line' => 3,
+                        'file' => '/some/path/to/some/file',
+                    ]
+                ],
+                'tag' => 'unittest',
+                'data' => [
+                    'message' => 'This is it.',
+                    'level' => Logger::getLevelName(Logger::DEBUG),
+                    'line' => 3,
+                    'file' => '/some/path/to/some/file',
+                ]
+            ]
         ];
     }
 
