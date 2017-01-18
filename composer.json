@@ -3,7 +3,7 @@
     "require": {
         "php": ">=5.4",
         "monolog/monolog": "1.*",
-        "fluent/logger": "v1.0.0"
+        "fluent/logger": "^0.3"
     },
     "require-dev": {
         "phpunit/phpunit": "~4.3",
